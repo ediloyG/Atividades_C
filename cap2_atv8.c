@@ -16,5 +16,6 @@ float temperaturaCelsius, temperaturaFahrenheit;
   temperaturaFahrenheit = temperaturaCelsius * (9.0/5.0) + 32.0;
 
   printf("A temperatura %.2f graus Celsius equivale a %.2f graus Fahrenheit.\n", temperaturaCelsius, temperaturaFahrenheit);
+ 
   return 0;
 }

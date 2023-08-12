@@ -6,5 +6,6 @@ int main(){
 
     printf("Inicio pograma\n");
     printf("Fim programa");
-
+    
+    return 0;
 }

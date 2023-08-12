@@ -15,5 +15,6 @@ int main(){
   area = pi * raio * raio;
 
   printf("Area do circulo %.2f", area);
+  
   return 0;
 }

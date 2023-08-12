@@ -8,6 +8,5 @@ int main(){
     scanf("%d",&num);
     printf("Aqui o numero e %d\n",num); 
 
-
     return 0;
 }

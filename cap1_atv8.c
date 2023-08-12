@@ -11,6 +11,5 @@ int main(){
 
    printf("Aqui esta o 2 numero = %d e 1 numero = %d",b,a); 
    
-
     return 0;
 }

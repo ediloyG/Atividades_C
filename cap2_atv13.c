@@ -19,5 +19,6 @@ int main(){
   hipotenusa = sqrt(catetoA * catetoA + catetoB * catetoB);
 
   printf("o valor da hipotenusa eh %.2f", hipotenusa);
+  
   return 0;
 }

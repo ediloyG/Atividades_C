@@ -10,6 +10,5 @@ int main(){
     scanf("%d",&num);
     printf("Aqui o numero : %f\n",num); 
 
-
     return 0;
 }
