@@ -1,29 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 /*
-5)  Faça um programa que leia um número e, caso ele seja positivo, calcule e mostre:
-• O número digitado ao quadrado.
-• A raiz quadrada do número digitado.
+6)  Faça um programa que receba a altura e o sexo de uma pessoa e calcule e mostre
+seu peso ideal, utilizando as seguintes fórmulas (em que “h” corresponde à altura):
+• Homens: (72,7 * h) – 58
+• Mulheres: (62,1 * h) – 44,7
+
 */
 int main(){
 
-    float numero, resultQuadrado, resultRaiz ;
+    float altura, peso_ideal;
+    char sexo;
 
-    printf("insira um valor positivo:\n");
-    scanf("%f", &numero);
+    printf("Digite sua altura: \n");
+    scanf("%f", &altura);
 
-    if (numero > 0)
+    printf("Digite seu sexo, 'M' para masculino e 'F' para feminino:\n");
+    scanf(" %c", &sexo);
+
+    switch (sexo)
     {
-        resultQuadrado = (numero * numero);
-        resultRaiz = sqrt(numero);
+    case 'M':
+        peso_ideal = (72.7 * altura) - 58;
+        break;
+    case 'F':
+        peso_ideal = (62.1 * altura) - 44.7;
+        break;
+    default:
+        printf("digite M ou F");
+        return 1;
+        break;
+    }
 
-        printf("o valor do numero ao quadrado: %.2f e a raiz quadrada %.2f", resultQuadrado, resultRaiz);
-
-    }else{
-        printf("o valor nao eh inteiro");
-
-    }  
-
+    printf("seu peso ideal eh %.2f",peso_ideal);
     return 0;
 }
