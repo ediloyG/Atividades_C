@@ -3,7 +3,7 @@
 
 int main (){
     //controle de variaveis
-   int menu, dias_semana, n, i, j;
+   int menu, dias_semana, n, x, y;
 
     printf("Escolha uma opcao para acessar as questoes\n");
     printf("1 - apresenta o RA | 2 saber os dias da semana | 3 para arvore| 4 para sair\n");
@@ -55,12 +55,14 @@ int main (){
             scanf("%d", &n);
         //valida o n para maior que 0 e menor que 9
         } while (n <= 0 || n >= 9);
-        //i vai controlar as linhas
-        for ( i = 1; i <= n; i++) {
-            //J vai controlar a quantidade de escrita
-            for (j = 1; j <= i; j++) {
-            printf("#");
-        }
+        //x para linha
+        for(x = 1; x <= n; x++){
+        //y para escrita
+            for(y = n - x; y >= 1; y--) // imprime os espaços à esquerda
+            printf(" ");
+                for(y = 1; y <= x; y++) // imprime os * à esquerda
+                printf("*");
+                printf(" ");
         printf("\n");
     }
     break;
@@ -68,7 +70,7 @@ int main (){
     case 4:
         printf("voce saiu da operacao");
         break;
-    //se escolher fora das 4 opçes vai cair aqui    
+    //fora das 4 opções    
     default:
 
         printf("Numero fora do padrao");
