@@ -11,8 +11,8 @@ int main (){
         printf("digite a nota do aluno\n");
         scanf("%d", &a);
         nota[i] = a;
-        soma = soma + nota[i];
-        printf ("%f\n", soma);
+        soma =+ nota[i];
+        printf ("%.2f\n", soma);
     }
     media = soma / 4;
     printf("a media do aluno %.2f", media);
